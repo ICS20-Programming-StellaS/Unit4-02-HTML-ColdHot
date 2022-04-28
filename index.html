@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Ms Raffin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Guess the number</title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+    <h1>Cold or Hot</h1>
+		<table>
+			<tr>
+				<td>
+					<h3>Enter in the temperature in celsius:</h3>
+					<form action="javascript:displayNumber()">						
+						<label for="temperature">Temperature:</label>
+						<input type="number" id="temperature" placeholder="Enter the temperature"><br><br>
+						<input type="submit" value="How's the weather?">
+					</form>
+				</td>
+				<td>
+					<img src="./images/hot_cold.png" alt="ColdHot" width="40%">
+				</td>
+			</tr>
+		</table>
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+			<div id="answer">
+        <div id="guess">
+        </div>
+			</div>
+		</div>
+  </body>
+</html>
